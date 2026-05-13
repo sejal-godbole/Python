@@ -1,0 +1,59 @@
+@sejal-godbole ➜ /workspaces/Python/01_basics (main) $ ls
+__pycache__  hello.py
+chai.py      inner_working_of_python.txt
+@sejal-godbole ➜ /workspaces/Python/01_basics (main) $ python
+Python 3.12.1 (main, Mar 11 2026, 12:17:56) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+Ctrl click to launch VS Code Native REPL
+>>> print("sejal")
+sejal
+>>> 2*2
+4
+>>> "Sejal" * 4
+'SejalSejalSejalSejal'
+>>> score = 100
+>>> score
+100
+>>> tea
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tea' is not defined
+>>> import os
+>>> os.getcwd
+<built-in function getcwd>
+>>> os.getcwd()
+'/workspaces/Python/01_basics'
+>>> for c in "chai"
+  File "<stdin>", line 1
+    for c in "chai"
+                   ^
+SyntaxError: expected ':'
+>>> for c in "chai":
+...     print(c)
+... 
+c
+h
+a
+i
+>>> import sys
+>>> sys.platform
+'linux'
+>>> import hello
+Hello Sejal
+4
+>>> hello.chai("mint chai")
+mint chai
+>>> hello.chai_one
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'hello' has no attribute 'chai_one'
+>>> from importlib import reload
+>>> reload(hello)
+Hello Sejal
+4
+<module 'hello' from '/workspaces/Python/01_basics/hello.py'>
+>>> hello.chai_one
+'lemon tea'
+>>> hello.chai_three
+'masala chai'
+>>> 
