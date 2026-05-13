@@ -8,3 +8,90 @@
 8. PVC convertes the byte code into machine readable code.
 9. Python interpreter reads and executes the code line by line, and whenever some error occurs it haltes with an error message.
 10. The final execution occurs where the CPU executes the machine code and the final desired output is obtained.
+
+
+@sejal-godbole ➜ /workspaces/Python (main) $ python
+Python 3.12.1 (main, Mar 11 2026, 12:17:56) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+Ctrl click to launch VS Code Native REPL
+>>> import sys
+>>> sys.getrefcount(24601)
+3
+>>> sys.getrefcount('sejal')
+4294967295
+>>> sys.getrefcount('godbole')
+4294967295
+>>> sys.getrefcount(1)
+4294967295
+>>> a = 3
+>>> a = 'sejal'
+>>> a = 3.14
+>>> a = 5
+>>> b = 2
+>>> a
+5
+>>> b
+2
+>>> a = a + 2
+>>> a
+7
+>>> myListOne = [1, 2, 3]
+>>> myListTwo = myListone
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'myListone' is not defined. Did you mean: 'myListOne'?
+>>> myListTwo = myListOne
+>>> myListOne = 'sejal'
+>>> myListTwo
+[1, 2, 3]
+>>> myListOne = [1, 2, 3]
+>>> myListTwo
+[1, 2, 3]
+>>> myListTwo
+[1, 2, 3]
+>>> myListOne[0] = 33
+>>> myListOne
+[33, 2, 3]
+>>> myListTwo
+[1, 2, 3]
+>>> l1 = [1, 2, 3]
+>>> l2 = l1
+>>> l2
+[1, 2, 3]
+>>> l1[0] = 44
+>>> l1
+[44, 2, 3]
+>>> l2
+[44, 2, 3]
+>>> 
+>>> h1 = [1, 2, 3]
+>>> h2 = h1[:]
+>>> h1
+[1, 2, 3]
+>>> h2
+[1, 2, 3]
+>>> h1[0] = 55
+>>> h1
+[55, 2, 3]
+>>> h2
+[1, 2, 3]
+>>> 
+>>> import copy
+>>> h2 = copy.copy(h1)
+>>> h1
+[55, 2, 3]
+>>> h2
+[55, 2, 3]
+>>> 
+>>> n = [1, 2, 3]
+>>> m = n
+>>> m == n
+True
+>>> m is n
+True
+>>> m = [1, 2, 3]
+>>> m == n
+True
+>>> m is n
+False
+>>> 
