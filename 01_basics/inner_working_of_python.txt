@@ -1,0 +1,10 @@
+1. Python is an interpreted language.
+2. Line by line execution of code happens.
+3. Python code is saved in a file with .py extension.
+4. This source code is read and converted into tokens.
+5. These tokens are arranged into parse tree, which represents the grammatical structure of the code, and to check whether the syntax is correct or not.
+6. This parse tree is converted into lower level intermediate byte code with .pyc extension.
+7. This .pyc file is then sent to a python virtual machine (PVM) which is a python interpreter.
+8. PVC convertes the byte code into machine readable code.
+9. Python interpreter reads and executes the code line by line, and whenever some error occurs it haltes with an error message.
+10. The final execution occurs where the CPU executes the machine code and the final desired output is obtained.
