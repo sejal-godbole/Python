@@ -1,0 +1,26 @@
+Feature Engineering is the process of converting raw data into meaningful inputs that improves the model accuracy and performance
+
+It is the process of selecting, creating or modifying features like input variables or data to help machine learning model learn patterns more effectively
+
+Importance of Feature Engineering
+
+1. Improve accuracy
+2. Reduce overfitting: using fewer more important data helps the model to avoid memorization and perform better on new data
+3. Boost interpretability
+4. Enhance efficiency
+
+Process involved in feature Engineering
+
+1. Feature Creation: generating new features based on the existing domain knowledge
+2. Feature Transformation: Feature scaling, Encoding, Mathematical Transformation
+3. Feature Extraction: Transform existing features into a lower-dimensional or more informative representation eg. PCA
+4. Feature Selection: filter methods, wrapper methods, embedded methods
+5. Feature scaling: scaling ensures that all features contibutes equally to the model - min-max scaling, standard scaling
+
+Steps in feature Engineering
+
+1. Data Cleaning: Identify and correct errors or inconsistencies in the dataset to ensure data quality and reliability.
+2. Data Transformation: Transform raw data into a format suitable for modeling including scaling, normalization and encoding.
+3. Feature Extraction: Create new features by combining or deriving information from existing ones to provide more meaningful input to the model.
+4. Feature Selection: Choose the most relevant features for the model using techniques like correlation analysis, mutual information and stepwise regression.
+5. Feature Iteration: Continuously refine features based on model performance by adding, removing or modifying features for improvement.
